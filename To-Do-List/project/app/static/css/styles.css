@@ -1,0 +1,131 @@
+.register-box{
+  margin : 20px;
+  background-image : url('https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg');
+  height: 500px;
+  width : 950px;
+  background-color: blue;
+  color : white;
+  align-items: center;
+  border-radius:4px;
+  background-size: cover;
+}
+.text{
+  color: blue;
+  font-size:25px;
+
+}
+.heading{
+  padding-top : 10px;
+  padding-bottom: 20px;
+  background-color: pink;
+  height: 50px;
+  width: 430px;
+  border-radius:10px;
+  text-align: center;
+  /* align-items:center;  */
+}
+.submit-button{
+  height: 40px;
+  background-color : black;
+  color: white;
+  width: 100px;
+  border-radius:8px;
+}
+.container{
+  justify-content: left;
+  opacity: 0.7;
+  color: black;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-left:10px;
+  padding-top :90px;
+  padding-bottom : 40px;
+  height: 180px;
+  width:430px;
+  background-color: rgb(95, 221, 179);
+  border-radius : 10px;
+}
+
+.button {
+  background-color: rgb(117, 199, 117);
+  /* border: none; */
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:5px;
+}
+.logout-button{
+  font-size:30px;
+  color : black;
+  height:50px;
+  width:180px;
+  background-color:rgb(218, 159, 218);
+  border-radius: 5px;
+  position : fixed;
+  top: 90%;
+  left: 80%;
+}
+
+.mainpage-heading{
+  font-size:40px;
+  background-color: rgb(153, 153, 221);
+  text-align: center;
+  border-radius:5px;
+  margin:10px;
+}
+.tableheading1{
+  background-color:rgb(99, 241, 99);
+  width:20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tableheading2{
+  background-color:rgb(99, 241, 99);
+  width:390px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tableheading3{
+  background-color:rgb(99, 241, 99);
+  width:230px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tableheading4{
+  background-color:rgb(99, 241, 99);
+  width:20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tableheading5{
+  background-color:rgb(99, 241, 99);
+  width:20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tableheading6{
+  background-color:rgb(99, 241, 99);
+  width:20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tableheading7{
+  background-color:rgb(99, 241, 99);
+  width:20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.table{
+  width:98%;
+  /* background-color: rgb(250, 220, 165); */
+  margin:12px;
+  border-radius:5px;
+}
+.checkbox{
+  margin-left:120px;
+  display:flex;
+}

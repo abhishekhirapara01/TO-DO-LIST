@@ -1,0 +1,58 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+  <title>Home</title>
+</head>
+<body>
+  <header> 
+
+    <p class="mainpage-heading">TODO LIST</p>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav"> 
+          <li><a href="">Home</a></li>
+          <li><a id="logout" href="logout/">Log Out</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <table class="table">
+    <thead> 
+      <tr>
+        <th scope="col" class="tableheading1">Sr.No</th>
+        <th scope="col" class="tableheading2">Item</th>
+        <th scope="col" class="tableheading3">Created</th>
+        <th scope="col" class="tableheading4">Is_Completed</th>
+        <th scope="col" class="tableheading5">Priority</th>
+        <th scope="col" class="tableheading6">Action</th>
+        <th scope="col" class="tableheading7">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in model %}
+      <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.item}}</td>
+        <td>{{i.created}}</td>
+        <td>{{i.is_completed}}</td>
+        <td>{{i.priority}}</td>
+        <td><a href="{% url 'update' i.id %}">Update</a></td>
+        <td><a href="{% url 'delete' i.id %}">Delete</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <center><button class="button"><a href="{% url 'post'  %}"> Add Todo Item </a></button></center>
+  <center><button class="logout-button"><a href="{% url 'logout'  %}"> Log Out</a></button></center>
+  
+</body>
+</html>
